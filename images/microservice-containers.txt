@@ -1,0 +1,9 @@
+-la aplicación cliente realiza una solicitud al equilibrador de carga
+
+-el balanceador de carga de la aplicación inspecciona la solicitud del cliente y, en función de las reglas de enrutamiento, dirige la solicitud a una instancia y un puerto de un grupo objetivo que coincide con la regla
+
+-cada clase de contenedor tiene un grupo objetivo que realiza un seguimiento de las instancias y los puertos de cada contenedor de esa clase
+
+-una vez más, todos los contenedores tienen un único proceso de aplicación que se une al puerto 80 dentro del espacio de nombres de ese contenedor, sin embargo, a ese enlace se le asigna un puerto externo aleatorio en la instancia
+
+-en esta arquitectura de microservicio, cada contenedor solo maneja una característica única. diferentes instancias pueden ejecutar diferentes combinaciones de contenedores con diferentes capacidades y el balanceador de carga siempre dirigirá el tráfico correcto al puerto correcto en la instancia correcta

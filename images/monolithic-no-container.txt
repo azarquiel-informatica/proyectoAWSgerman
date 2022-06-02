@@ -1,0 +1,10 @@
+-la aplicación cliente realiza una solicitud al equilibrador de carga
+
+Solicitud de distribución por turnos del equilibrador de carga al puerto 80 en las instancias de back-endSolicitud de distribución por turnos del equilibrador de carga al puerto 80 en las instancias de back-end
+
+
+
+Node.js se une al puerto 80 en el host y la operación por turnos distribuye las solicitudes a los trabajadores
+
+
+generalmente se ejecuta un trabajador por núcleo de CPU. Cada trabajador en esta arquitectura monolítica es idéntico y tiene todas las características

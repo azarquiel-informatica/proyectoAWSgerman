@@ -1,0 +1,8 @@
+La operación por turnos del equilibrador de carga distribuye la solicitud en todos los puertos disponibles y las instancias registradas en el grupo de destino de las aplicaciones
+
+
+EC2 Container Service actualiza el grupo objetivo para tener siempre una lista actualizada de todos los contenedores de servicio en el clúster y en qué puerto se puede acceder a ellos
+
+Cada contenedor tiene un único proceso de aplicación que está vinculado al puerto 80 dentro de su espacio de nombres. Sin embargo, en realidad, todos los contenedores están expuestos en diferentes puertos asignados aleatoriamente en el host.
+
+Esta arquitectura está en contenedores pero sigue siendo monolítica porque cada contenedor tiene las mismas características que el resto de los contenedores.
